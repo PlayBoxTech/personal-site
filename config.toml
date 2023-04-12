@@ -1,0 +1,19 @@
+baseURL = 'http://hugo.chrisamoody.com/'
+languageCode = 'en-us'
+title = 'The Home Page of Chris A Moody '
+theme = 'chris'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "test"
+    pre = "edit-2"
+    url = "/test/"
+    weight = 2
+    hasChildren = true
+  
+

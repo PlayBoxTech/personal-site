@@ -1,0 +1,21 @@
+<nav id="nav" class="nav navbar-expand-lg navbar-dark bg-dark">
+    {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ .URL }}" id="{{ .Name }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ .Name }}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="{{ .Name }}">
+            {{ range .Children }}
+              <li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+      {{ else }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+</nav>
+  

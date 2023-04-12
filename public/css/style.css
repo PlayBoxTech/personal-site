@@ -1,0 +1,39 @@
+
+
+.container {
+    padding-left: 1%;
+    color: antiquewhite;
+    
+}
+
+#content {
+    color: white;
+    padding-left: 20%;
+    max-width: 80%;
+    
+}
+
+
+.bg-dark{
+    background-color: #122C34 !important;
+}
+
+a{
+    color: #ed7b1a
+}
+
+.welcome h1 {
+    text-align: center;
+}
+
+
+.jumbotron {
+    background-color: #001537;
+    color: #ffffff;
+}
+
+.footer{
+    color: #ffffff;
+    background-color: #001537;
+    padding-bottom: 2%;
+}
